@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    color: #8a8a8a;
+}
+
+a {
+    color: #3399cc;
+    text-decoration: none;
+}
+
+.volver {
+    display: inline-block;
+    margin: 20px;
+    font-size: 14px;
+}
+
+.que-hacemos {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 20px 60px;
+}
+
+.titulo {
+    color: #3c6382;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.intro {
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0 0 50px;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+}
+
+.servicio {
+    display: flex;
+    gap: 22px;
+}
+
+.icono {
+    font-size: 30px;
+    color: #3c6382;
+    width: 40px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.servicio h2 {
+    color: #3c6382;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 0 14px;
+}
+
+.servicio p {
+    font-size: 14px;
+    line-height: 1.9;
+    margin: 0;
+    max-width: 340px;
+}
+
+.servicio b {
+    color: #555555;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 26px;
+    background-color: #2e6aa3;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #1f4f7d;
+}
+
+@media (max-width: 700px) {
+    .servicios {
+        grid-template-columns: 1fr;
+    }
+}
